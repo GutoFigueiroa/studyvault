@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    // LAYOUT DE ARQUIVOS
+    "rootDir": "./src", // Onde seus arquivos TypeScript (.ts) estão.
+    "outDir": "./dist", // Onde os arquivos compilados (.js) serão salvos.
+    // MÓDULOS E TARGET
+    "target": "ES2020", // Versão do JavaScript de saída (moderna).
+    "module": "CommonJS", // Usa o sistema de módulos padrão do Node.js.
+    "esModuleInterop": true, // Permite importar módulos CommonJS como padrão (ex: `import express from 'express';`).
+    "forceConsistentCasingInFileNames": true,
+    // TIPAGEM E RIGOR
+    "strict": true, // Habilita um conjunto de regras de tipagem estritas.
+    "skipLibCheck": true, // Ignora a checagem de tipagem de bibliotecas externas (acelera o build).
+    // AMBIENTE
+    "resolveJsonModule": true, // Permite importar arquivos .json.
+    "sourceMap": true, // Gera arquivos de mapeamento para facilitar o debug.
+    // Desabilitar opções não essenciais para o backend Node.js
+    "jsx": "preserve" // Não precisamos de JSX no backend, mas 'preserve' é seguro.
+  },
+  "include": [
+    "src/**/*"
+  ] // Inclui todos os arquivos dentro da pasta 'src'.
+}
